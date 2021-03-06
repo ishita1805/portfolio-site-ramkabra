@@ -7,3 +7,13 @@ body {
 .comp-containers{
   min-height:100vh;
 }
+::-webkit-scrollbar {
+  width:5px;
+}
+::-webkit-scrollbar-track {
+  background: #c5c5c5;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(61, 61, 61);
+  border-radius: 4px;
+}

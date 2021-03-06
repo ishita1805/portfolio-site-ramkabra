@@ -5,6 +5,7 @@ import Patients from './containers/patients'
 import Appointments from './containers/appointments'
 import Footer from './components/footer'
 import FixedIcon from './components/iconFixed'
+import Privacy from './containers/privacyPolicy'
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         <Route exact path ='/' component={Homepage}/>
         <Route exact path='/patients' component={Patients}/>
         <Route exact path='/appointments' component={Appointments}/>
+        <Route exact path='/privacy-policy' component={Privacy}/>
       </Switch>
       <Footer/>
       <FixedIcon/>
