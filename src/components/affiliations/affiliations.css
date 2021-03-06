@@ -1,0 +1,7 @@
+#affiliations{
+    min-height:100vh;
+    width:100%;
+    background:orange;
+    display:flex;
+    flex-direction:column;
+}
