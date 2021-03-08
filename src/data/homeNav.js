@@ -4,7 +4,7 @@ const navList = [
         label: 'Home'
     },
     {
-        id: 'about',
+        id: 'abt',
         label: 'About'
     },
     {
