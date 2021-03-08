@@ -1,9 +1,12 @@
 import React from 'react'
+import './testimonial.css'
+import TestimonialCard from './terstimonialCard'
 
 const Testimonial = () => {
     return (
-        <div>
-            Testimonial Comp
+        <div id='testimonials'>
+            <i className='fa fa-quote-right'></i>
+            <TestimonialCard/>
         </div>
     )
 }

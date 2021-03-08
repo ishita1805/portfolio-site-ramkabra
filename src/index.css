@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap');
+
 body {
   margin: 0;
   font-family:'Playfair Display', serif, 'Quicksand', sans-serif;;
@@ -8,13 +10,14 @@ body {
   min-height:100vh;
 }
 ::-webkit-scrollbar {
-  width:5px;
+  width:7px;
 }
 ::-webkit-scrollbar-track {
-  background: #c5c5c5;
+  background:black;
 }
-::-webkit-scrollbar-thumb {
-  background: rgb(61, 61, 61);
+::-webkit-scrollbar-thumb{
+  background:#e6b140;
+  cursor:pointer;
   border-radius: 4px;
 }
 .clickable{
@@ -25,4 +28,14 @@ body {
   font-family:'Playfair Display', serif;
   font-size:45px;
   font-weight:700;
+}
+@media screen and (max-width:900px){
+  .heading{
+    font-size:42px;
+  }
+}
+@media screen and (max-width:500px){
+  .heading{
+    font-size:37px;
+  }
 }

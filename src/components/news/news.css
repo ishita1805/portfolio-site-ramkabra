@@ -1,0 +1,93 @@
+#news{
+    height:auto;
+    width:80%;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+    text-align: right;
+    background:white;
+    padding:15vh 0;
+    overflow-x:hidden;
+    padding-right:20%;
+}
+#news p{
+    width:60%;
+}
+.news-card{
+    margin-top:2vh;
+    height:45vh;
+    width:45vh;
+    box-shadow:0 0 8px rgba(0, 0, 0, 0.1);
+    margin-left:4vh;
+    overflow:hidden;
+    border-radius:5px;
+}
+.nc-img{
+    width:100%;
+    height:25vh;
+    overflow:hidden;
+    background:pink;
+}
+.nc-img img{
+    width:100%;
+    height:auto;
+}
+.nc-text{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content: flex-start;
+    padding:0 2vh;
+}
+.nc-text h1{
+    margin:0;
+    margin-top:3vh;
+    font-size:75px;
+    font-weight:500;
+    color:#DCD8D8;
+    font-family: 'Philosopher', sans-serif;
+}
+.nc-text-in{
+    margin-top:3vh;
+    display:flex;
+    flex-direction:column;
+    text-align:left;
+    margin-left:2vh;
+}
+
+
+@media screen and (max-width:1400px){
+    #news{
+        width:85%;
+        padding:15vh 0;
+        padding-right:15%
+    }
+}
+@media screen and (max-width:1200px){
+    #news{
+        width:90%;
+        padding:15vh 0;
+        padding-right:10%
+    }
+    #news p{
+        width:80%;
+    }
+}
+@media screen and (max-width:1000px){
+    #news{
+        width:95%;
+        padding:15vh 0;
+        padding-right:5%
+    }
+    #news p{
+        width:95%;
+    }
+    .news-card{
+        margin-right:3vh;
+    }
+}
+@media screen and (max-width:500px){
+    .news-card{
+        width:40vh;
+    }
+}

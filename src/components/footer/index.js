@@ -8,7 +8,10 @@ const Footer = () => {
             
             <div className='footer1'>
                 <h2>Dr. Shriram Kabra</h2>
-                <p>Email:  shriramkabra28@gmail.com</p>
+                <div className='foot-icons-2'>
+                    <a target='__blank' href='mailto:hriramkabra28@gmail.com'><i class="fa fa-envelope"></i></a>
+                    <i class="fa fa-phone clickable"></i>
+                </div>
                 {/* <p>Number: +91 9212391619 /  +91 9003783680</p> */}
                 <Link exact target='__blank' to='/privacy-policy'>Privacy Policy @2021</Link>
             </div>

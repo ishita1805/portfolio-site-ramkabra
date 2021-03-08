@@ -20,7 +20,7 @@ const navList = [
         label: 'Testimonials'
     },
     {
-        id: 'faqs',
+        id: 'faq',
         label: 'FAQs'
     },
 ]
