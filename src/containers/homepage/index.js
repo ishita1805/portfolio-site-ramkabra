@@ -6,6 +6,7 @@ import News from '../../components/news'
 import Facilities from '../../components/facilities'
 import Testimonial from '../../components/testimonials'
 import FAQ from '../../components/faq'
+import FixedIcon from '../../components/iconFixed'
 
 
 
@@ -19,6 +20,7 @@ const Home = () => {
             <Facilities/>
             <Testimonial/>
             <FAQ/>
+            <FixedIcon/>
         </div>
     )
 }

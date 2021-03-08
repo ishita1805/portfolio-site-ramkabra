@@ -1,9 +1,25 @@
 .button{
     padding:1vh 2vh;
+    text-align:center;
     color:#AF9D5E;
     background:#131313;
     margin-top:5vh;
     cursor:pointer;
+    font-size:18px;
+    font-weight:700;
+}
+.button-form{
+    padding:1vh 2vh;
+    border:none;
+    outline:none;
+    text-align:center;
+    color:#AF9D5E;
+    background:#131313;
+    margin:1vh 0;
+    cursor:pointer;
+    border-radius:3px;
+    width:100%;
+    font-family:'Playfair Display', serif;
     font-size:18px;
     font-weight:700;
 }

@@ -21,6 +21,9 @@
     transition:0.4s;
     overflow:hidden;
 }
+.icon-fixed-small span:hover, .icon-fixed span:hover{
+    font-weight:600;
+}
 .icon-fixed-small{
     position:fixed;
     bottom:3vh;

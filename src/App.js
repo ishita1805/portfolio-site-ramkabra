@@ -4,7 +4,6 @@ import Homepage from './containers/homepage'
 import Patients from './containers/patients'
 import Appointments from './containers/appointments'
 import Footer from './components/footer'
-import FixedIcon from './components/iconFixed'
 import Privacy from './containers/privacyPolicy'
 
 const App = () => {
@@ -17,7 +16,6 @@ const App = () => {
         <Route exact path='/privacy-policy' component={Privacy}/>
       </Switch>
       <Footer/>
-      <FixedIcon/>
     </div>
   )
 }

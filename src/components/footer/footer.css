@@ -81,4 +81,7 @@
     .footer2{
         margin-right:7vh;
     }
+    .foot-icons-2{
+        justify-content: flex-end;
+    }
 }

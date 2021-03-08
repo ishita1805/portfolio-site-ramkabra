@@ -1,16 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './footer.css'
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
+import Contact from '../contact'
 
 const Footer = () => {
+    const [close,setClose] = useState(true);
     return (
+        <>
+        {close?null:<Contact close={(data)=>setClose(data)}/>}
         <div className='footer'>
-            
             <div className='footer1'>
                 <h2>Dr. Shriram Kabra</h2>
                 <div className='foot-icons-2'>
                     <a target='__blank' href='mailto:hriramkabra28@gmail.com'><i class="fa fa-envelope"></i></a>
-                    <i class="fa fa-phone clickable"></i>
+                    <i class="fa fa-phone clickable" onClick={()=>setClose(false)}></i>
                 </div>
                 {/* <p>Number: +91 9212391619 /  +91 9003783680</p> */}
                 <Link exact target='__blank' to='/privacy-policy'>Privacy Policy @2021</Link>
@@ -27,6 +30,7 @@ const Footer = () => {
             </div>
 
         </div>
+        </>
     )
 }
 

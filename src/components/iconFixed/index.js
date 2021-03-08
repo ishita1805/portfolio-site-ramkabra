@@ -15,14 +15,14 @@ const FixedIcon = () => {
             {
                 visible?
                 <>
-                <Link to='/appointments' exact>Book Appointments</Link> | <Link to='/patients' exact>For Patients</Link>
+                <Link to='/appointments' exact><span>Book Appointments</span></Link> | <Link to='/patients' exact><span>For Patients</span></Link>
                 </>:
                 <>
                 <div className={!onClickhandler?'icon-1':'icon-2'}>
                 
                     <i class={!onClickhandler?'fa fa-chevron-right display':'fa fa-chevron-right hide'} onClick={()=>setOnClickHandler(!onClickhandler)}></i>
                     
-                       <div className={onClickhandler?'i display':'i hide'}> <Link to='/appointments' exact>Book Appointments</Link> | <Link to='/patients' exact>For Patients</Link> </div>
+                       <div className={onClickhandler?'i display':'i hide'}> <Link to='/appointments' exact><span>Book Appointments</span></Link> | <Link to='/patients' exact><span>For Patients</span></Link> </div>
                         <i class={onClickhandler?'fa fa-chevron-left display':'fa fa-chevron-left hide'} onClick={()=>setOnClickHandler(!onClickhandler)}></i>
                     
             

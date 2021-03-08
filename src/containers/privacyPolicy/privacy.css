@@ -1,0 +1,10 @@
+.privacy{
+    min-height:68vh;
+    padding:5vh 3%;
+    width:94%;
+}
+@media screen and (max-width:800px){
+    .privacy{
+        min-height:53.8vh;
+    }
+}
