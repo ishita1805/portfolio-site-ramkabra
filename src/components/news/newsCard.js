@@ -13,7 +13,7 @@ const newsCard = ({id,title,decp,...props}) => {
                     <div>
                         <b>{title}</b>
                         <br/>
-                        {decp.substring(0,40)}...
+                        {decp.substring(0,40)}..
                     </div>
                 </div>
                

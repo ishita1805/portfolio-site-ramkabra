@@ -35,20 +35,3 @@ const FixedIcon = () => {
 }
 
 export default FixedIcon
-
-//  <div className='icon-fixed'>
-//             <Link to='/appointments' exact>Book Appointments</Link> | <Link to='/patients' exact>For Patients</Link>
-        
-//              {
-//                 visible?
-//                 <>
-//                 <Link to='/appointments' exact>Book Appointments</Link> | <Link to='/patients' exact>For Patients</Link>
-//                 </>:
-//                 <div>
-//                     <span>
-//                         <Link to='/appointments' exact>Book Appointments</Link> | <Link to='/patients' exact>For Patients</Link>
-//                     </span>
-//                     <i onClick={()=>setOnClickHandler(!onClickhandler)} class={!onClickhandler?"fa fa-chevron-left":"fa fa-chevron-right"}></i>
-//                 </div>
-//                 } 
-//         </div> 

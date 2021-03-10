@@ -13,7 +13,7 @@ const FAQ = () => {
     }
     const data = [
         {
-            no:'01',
+            no:'01 ',
             quest:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra eget morbi pharetra consequat, tincidunt sed. Urna, accumsan lectus sapien sit rhoncus.',
             ans:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra eget morbi pharetra consequat, tincidunt sed. Urna, accumsan lectus sapien sit rhoncus.'
         },

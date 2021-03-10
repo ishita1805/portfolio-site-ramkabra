@@ -88,3 +88,10 @@
         left:2vh;
     }
 }
+@media screen and (max-width:500px){
+    .icon-fixed{
+        left:0;
+        padding:2vh 0.5vw;
+        min-width:99vw;
+    }
+}

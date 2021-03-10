@@ -42,6 +42,8 @@
 .faq-card i{
     cursor:pointer;
     font-size:18px;
+    margin:0 1vh;
+    margin-bottom:2vh;
     color:#616161;
 }
 @media screen and (max-width:1400px){
