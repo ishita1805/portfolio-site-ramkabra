@@ -1,6 +1,6 @@
 #news{
     height:auto;
-    width:80%;
+    width:85%;
     display:flex;
     flex-direction:column;
     align-items:flex-end;
@@ -8,14 +8,14 @@
     background:white;
     padding:15vh 0;
     overflow-x: hidden;
-    padding-right:20%;
+    padding-right:15%;
 }
 #news p{
     width:60%;
 }
 .news-cont{
     display:flex;
-    width:100%;
+    width:95%;
     cursor:pointer;
     flex-direction:row;
     padding:2vh 0;
@@ -109,6 +109,11 @@
     }
     .news-card{
         margin-right:3vh;
+    }
+}
+@media screen and (max-width:800px){
+    .news-cont{
+        width:100%;
     }
 }
 @media screen and (max-width:500px){
