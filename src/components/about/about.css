@@ -9,6 +9,7 @@
     justify-content:flex-start;
     background:white;
     display:flex;
+    overflow-x: hidden;
     flex-direction:column;
 }
 #about h3{
