@@ -4,13 +4,15 @@
 
 body {
   margin: 0;
-  font-family:'Playfair Display', serif, 'Quicksand', sans-serif;;
+  font-family:'Playfair Display', serif, 'Quicksand', sans-serif;
+  
 }
 .comp-containers{
   min-height:100vh;
 }
 ::-webkit-scrollbar {
   width:7px;
+  height:0px;
 }
 ::-webkit-scrollbar-track {
   background:black;

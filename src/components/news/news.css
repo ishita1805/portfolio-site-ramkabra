@@ -7,20 +7,44 @@
     text-align: right;
     background:white;
     padding:15vh 0;
-    overflow-x:hidden;
     padding-right:20%;
 }
 #news p{
     width:60%;
 }
+.news-cont{
+    display:flex;
+    width:100%;
+    cursor:pointer;
+    flex-direction:row;
+    padding:2vh 0;
+    overflow-x:scroll !important;
+}
 .news-card{
     margin-top:2vh;
-    height:45vh;
-    width:45vh;
+    min-height:45vh !important;
+    min-width:45vh !important;
     box-shadow:0 0 8px rgba(0, 0, 0, 0.1);
     margin-left:4vh;
     overflow:hidden;
     border-radius:5px;
+}
+.next-button{
+    height:7vh;
+    width:6.8vh;
+    display:flex;
+    box-shadow:0 5px 12px rgba(0,0,0,0.5);
+    align-items:center;
+    justify-content:center;
+    color:white;
+    font-size:20px;
+    padding-left:0.2vh;
+    background:#e6b140;
+    border-radius: 3.5vh;
+    position:absolute;
+    cursor:pointer;
+    margin-top:40vh;
+    margin-right:-3.5vh;
 }
 .nc-img{
     width:100%;

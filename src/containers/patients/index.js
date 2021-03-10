@@ -2,7 +2,7 @@ import React from 'react'
 
 const Patients = () => {
     return (
-        <div>
+        <div className='comp-containers'>
             Patients container
         </div>
     )

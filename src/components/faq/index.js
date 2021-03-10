@@ -88,7 +88,7 @@ const FAQ = () => {
                     else return null;
                 })
             }
-            <Button label={more===data.length?'Load Less':'Load More'} onClick={loadHandler}/>
+            <Button label={more===data.length?'Show Less':'Show More'} onClick={loadHandler}/>
         </div>
     )
 }
