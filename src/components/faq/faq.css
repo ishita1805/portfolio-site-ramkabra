@@ -27,6 +27,9 @@
     justify-content:flex-start;
     margin:0;
 }
+.fixer-text{
+    color:white;
+}
 .faq-card h1{
     margin:0;
     font-size:50px;
