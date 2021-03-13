@@ -115,8 +115,8 @@
 }
 @media screen and (max-width:500px){
     #news{
-        width:93%;
-        padding-right:7%
+        width:90%;
+        padding-right:10%;
     }
     .news-card{
         min-height:42vh !important;
