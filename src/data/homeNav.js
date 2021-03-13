@@ -1,27 +1,33 @@
 const navList = [
     {
         id: 'home',
-        label: 'Home'
+        label: 'Home',
+        internal: 'true',
     },
     {
         id: 'abt',
-        label: 'About'
+        label: 'About',
+        internal: 'true',
     },
     {
         id: 'news',
-        label: 'In The News'
+        label: 'In The News',
+        internal: 'true',
     },
     {
         id: 'facilities',
-        label: 'Facilities'
+        label: 'Facilities',
+        internal: 'true',
     },
     {
         id: 'testimonials',
-        label: 'Testimonials'
+        label: 'Testimonials',
+        internal: 'true',
     },
     {
         id: 'faq',
-        label: 'FAQs'
+        label: 'FAQs',
+        internal: 'true',
     },
 ]
 

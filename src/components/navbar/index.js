@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import './nav.css'
+import { NavLink as LinkRouter } from "react-router-dom";
 import { Link } from "react-scroll";
-import navList from '../../data/homeNav'
+// import navList from '../../data/homeNav'
 
-const Navbar = () => {
+const Navbar = ({navList,...props}) => {
     const [nav,setNavState] = useState(false);
     return (
         <>
@@ -17,21 +18,31 @@ const Navbar = () => {
 
         <div className={nav?"Nav2":"Navigation"}>
             {
-                navList.map((item)=>(
-                        <Link activeClass="active" to={item.id} spy={true} offset={-58} smooth={true} duration={500}>
-                            <span onClick={()=>setNavState(!nav)}>{item.label}</span>
-                        </Link>
-                ))
+                navList.map((item)=>{
+                    if(item.internal === 'true')
+                    return <Link activeClass="active" to={item.id} spy={true} offset={-58} smooth={true} duration={500}>
+                                <span onClick={()=>setNavState(!nav)}>{item.label}</span>
+                            </Link>
+
+                    else return <LinkRouter className='navlink' to={item.id} exact>
+                                    <span onClick={()=>setNavState(!nav)}>{item.label}</span>
+                                </LinkRouter>
+                })
             }
         </div> 
 
         <div className="Navigation2">
             {
-                navList.map((item)=>(
-                        <Link activeClass="active" to={item.id} spy={true} offset={-58} smooth={true} duration={500}>
-                            <span>{item.label}</span>
-                        </Link>
-                ))
+                navList.map((item)=>{
+                    if(item.internal === 'true')
+                    return <Link activeClass="active" to={item.id} spy={true} offset={-58} smooth={true} duration={500}>
+                                <span onClick={()=>setNavState(!nav)}>{item.label}</span>
+                            </Link>
+
+                    else return <LinkRouter className='navlink' to={item.id} exact>
+                                    <span onClick={()=>setNavState(!nav)}>{item.label}</span>
+                                </LinkRouter>
+                })
             }
         </div> 
         </>

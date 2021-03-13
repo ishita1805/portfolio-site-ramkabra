@@ -31,21 +31,24 @@
     border-radius:5px;
 }
 .next-button{
-    height:7vh;
-    width:6.5vh;
     display:flex;
     box-shadow:0 5px 12px rgba(0,0,0,0.5);
     align-items:center;
     justify-content:center;
     color:white;
-    font-size:20px;
-    padding-right:0.5vh;
+    font-size:30px;
+    padding:2vh 2.5vh;
     background:#e6b140;
-    border-radius: 3.5vh;
+    border-radius: 4.5vh;
     position:absolute;
     cursor:pointer;
     margin-top:40vh;
     margin-right:-3.5vh;
+}
+.next-button i{
+    margin:0;
+    padding:0;
+    align-self:center;
 }
 .nc-img{
     width:100%;
@@ -136,8 +139,6 @@
 }
 @media screen and (min-height:1030px){
     .next-button{
-        height:7vh;
-        width:6.5vh;
         margin-top:37vh;
         margin-right:-5vh;
     }

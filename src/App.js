@@ -5,6 +5,7 @@ import Patients from './containers/patients'
 import Appointments from './containers/appointments'
 import Footer from './components/footer'
 import Privacy from './containers/privacyPolicy'
+import Services from './containers/services'
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Route exact path='/patients' component={Patients}/>
         <Route exact path='/appointments' component={Appointments}/>
         <Route exact path='/privacy-policy' component={Privacy}/>
+        <Route exact path='/services/:id' component={Services}/>
       </Switch>
       <Footer/>
     </div>

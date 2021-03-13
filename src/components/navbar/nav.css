@@ -9,12 +9,16 @@
     align-items:center;
     background:white;
     font-family:'Quicksand', sans-serif;
-    color:#484848;
+    color:#484848 !important;
     justify-content:flex-start;
     z-index:1000;
 }
+.navlink{
+    color:#484848;
+    text-decoration:none;
+}
 .active{
-    color:rgb(172, 171, 171);
+    color:rgb(172, 171, 171) !important;
 }
 .Navigation2{
     height:10vh;

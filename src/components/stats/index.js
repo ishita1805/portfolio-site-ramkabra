@@ -6,7 +6,7 @@ const Stats = () => {
     const data = [
         {
             label:'Dialysis',
-            val:2000
+            val:8000
         },
         {
             label:'Years',
@@ -14,7 +14,7 @@ const Stats = () => {
         },
         {
             label:'Transplants',
-            val:300
+            val:1000
         },
     ]
     return (

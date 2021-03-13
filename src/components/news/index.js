@@ -1,8 +1,10 @@
-import React from 'react'
+import React, {useRef, useState} from 'react'
 import './news.css'
 import NewsCard from './newsCard'
 
 const News = () => {
+    const posRef = useRef();
+    const [switchState,setSwitchState] = useState(false);
     const data = [
         {
             id:'01',
@@ -34,16 +36,26 @@ const News = () => {
             title:'Demo Title',
             decp:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Congue',
         }
-    
     ]
+
+    const scrollHandler = () => {
+        if(switchState){
+            posRef.current.children[0].scrollIntoView({behavior: "smooth", block: 'nearest', inline: 'start'});
+        }
+        else {
+            posRef.current.children[data.length-1].scrollIntoView({behavior: "smooth", block: 'nearest', inline: 'start'});
+        }
+        setSwitchState(!switchState);
+    }
+
     return (
         <div id='news'>
             <h1 className='heading'>In The News</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Congue nulla blandit nullam diam. Tellus morbi sapien risus vitae in nisl at nisl elementum.</p>
             <div className='next-button'>
-                <i className='fa fa-chevron-left'></i>
+                <i className={switchState?'fa fa-chevron-right':'fa fa-chevron-left'} onClick={scrollHandler}></i>
             </div>
-            <div className='news-cont'>
+            <div className='news-cont' ref={posRef}>
                 {data.map(
                     (item) => <NewsCard
                                 id={item.id}
