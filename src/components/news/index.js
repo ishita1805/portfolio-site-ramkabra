@@ -41,7 +41,7 @@ const News = () => {
             <h1 className='heading'>In The News</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Congue nulla blandit nullam diam. Tellus morbi sapien risus vitae in nisl at nisl elementum.</p>
             <div className='next-button'>
-                <i className='fa fa-chevron-right'></i>
+                <i className='fa fa-chevron-left'></i>
             </div>
             <div className='news-cont'>
                 {data.map(

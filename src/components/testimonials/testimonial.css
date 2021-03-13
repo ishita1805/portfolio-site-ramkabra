@@ -7,6 +7,23 @@
     justify-content:center;
     background:#F3F3F3;
 }
+.dots-testimonial{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+}
+.dots-testimonial span {
+    height:2vh;
+    width:2vh; 
+    margin:0 0.5vh;
+    cursor:pointer;
+    background:rgb(187, 187, 187);
+    border-radius:2vh;
+}
+.selected{
+    background:black !important;
+}
 #testimonials i{
     margin-top:5vh;
    font-size:30px;
