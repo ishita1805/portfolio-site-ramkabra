@@ -14,12 +14,12 @@
     justify-content:center;
 }
 .dots-testimonial span {
-    height:2vh;
-    width:2vh; 
+    height:10px;
+    width:10px; 
     margin:0 0.5vh;
     cursor:pointer;
     background:rgb(187, 187, 187);
-    border-radius:2vh;
+    border-radius:5px;
 }
 .selected{
     background:black !important;
